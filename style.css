@@ -1,0 +1,211 @@
+
+@font-face
+{
+  font-family: "Acsioma";
+  src: url("https://github.com/PancakeFury/VanVanChat/blob/main/acsiomac.otf")
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    text-shadow: 0 0 1px #000, 0 0 2px #000;
+    background: {background_color};
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: {font_size};
+    line-height: 1.5em;
+    color: {text_color};
+}
+
+#log>div {
+    animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+    -webkit-animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+  		font-family: "Acsioma"
+}
+
+.colon {
+    display: none;
+}
+
+#log {
+    display: table;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px 10px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#log>div {
+    
+}
+
+#log>div.deleted {
+    visibility: hidden;
+}
+
+#log .emote {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0.4em 0.2em;
+    position: relative;
+}
+
+#log .emote img {
+    display: inline-block;
+    height: 1em;
+    opacity: 0;
+}
+
+#log .message,#log .meta {
+    vertical-align: top;
+
+    padding-bottom: 0.1em;
+}
+
+#log .meta {
+    width: 100%;
+    text-align: left;
+    padding-right: 0.5em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#log .message {
+    word-wrap: break-word;
+    width: 100%;
+  z-index:10;
+}
+
+.badge {
+    display: inline-block;
+    margin-right: 0.2em;
+    position: relative;
+    height: 1em;
+    vertical-align: middle;
+    top: -0.1em;
+}
+
+.name {
+    margin-left: 0.2em;
+}
+
+.arrow
+{
+  height:24px;
+
+}
+
+.wrapper
+{
+  display:inline;
+}
+.messageColumn
+{
+  width:100%
+}
+
+table, td
+{
+  border:none;
+}
+
+.messageWrapper
+{
+  background: linear-gradient(to right, orange, transparent);
+    padding-left: 1em;
+  position:relative;
+  left:-5px;
+    border-radius:10px;
+
+  height:100%;
+    padding: 2px;
+
+
+}
+.messageMain
+{
+  background-color:#ffffd2;
+  padding: 4px;
+    border-radius:10px;
+  margin-left:2px;
+}
+.borderedBackground
+{
+  z-index:-1;
+
+  border-width:2px;
+  border-radius:10px;
+  position:absolute;
+  top:-5px;
+  left:-10px;
+  height:100%;
+  width:100%;
+}
+.petal1
+{
+  position:absolute;
+  right:-12px;
+  top:-15px;
+  width:32px;
+  z-index:-1;
+}
+
+.petal2wrapper
+{
+  width:100%;
+  overflow:hidden;
+  position:absolute;
+  left:0px;
+  top:0px;
+    border-radius:10px;
+  height:100%;
+  border: solid 2px transparent;
+}
+
+.petal2
+{
+  width:64px;
+  height:64px;
+  position:absolute;
+  right:-10px;
+  bottom:-12px;
+
+}
+
+.hidden
+{
+  display:none;
+}
+
+.tail2
+{z-index:-10;
+position:absolute;
+  left:-15px;
+  top:5px;
+  height:80%
+}
+
+.messageColumn
+{
+    width:100%
+}
+.tail2wrapper
+{
+  width:32px;
+  height:32px;
+  position:relative
+}
