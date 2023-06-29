@@ -2,7 +2,7 @@
 @font-face
 {
   font-family: "Acsioma";
-  src: url("https://github.com/PancakeFury/VanVanChat/blob/main/acsiomac.otf")
+  src: local("acsiomac.otf")
 }
 
 * {
